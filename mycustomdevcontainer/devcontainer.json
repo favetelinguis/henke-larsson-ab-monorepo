@@ -1,0 +1,8 @@
+{
+  ....
+  "build": {
+      "dockerfile": "../Dockerfile", // Where should i palce the docker file?
+      "target": "vs-code-devcontainer" // Need to specify the stage
+  },
+  ....
+}
