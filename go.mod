@@ -1,3 +1,3 @@
-module github.com/holmes89/hello-api
+module github.com/favetelinguis/henke-larsson-ab-monorepo
 
 go 1.20
