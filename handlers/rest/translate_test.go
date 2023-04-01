@@ -43,7 +43,10 @@ func TestTranslateAPI(t *testing.T) {
 		}
 
 		var resp rest.Resp
-		json.Unmarshal(rr.Body.Bytes(), &resp)
+		err := json.Unmarshal(rr.Body.Bytes(), &resp)
+		if err != nil {
+			return
+		}
 
 		if resp.Language != test.ExpectedLanguage {
 			t.Errorf(`expected language "%s" but received %s`,
