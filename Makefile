@@ -7,3 +7,5 @@ report:
 	go tool cover -html=coverage.out -o cover.html
 build:
 	go build -o api cmd/main.go
+check-format:
+	test -z $$(go fmt ./...)
