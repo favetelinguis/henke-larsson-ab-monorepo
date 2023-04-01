@@ -6,4 +6,3 @@
 
 
 An example of how to have multiple products in one repo
-Trigger build
