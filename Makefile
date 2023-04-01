@@ -9,3 +9,5 @@ build:
 	go build -o api cmd/main.go
 check-format:
 	test -z $$(go fmt ./...)
+vet:
+	go vet ./...
