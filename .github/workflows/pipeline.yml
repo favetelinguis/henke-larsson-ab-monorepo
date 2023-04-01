@@ -105,12 +105,12 @@ jobs:
           fetch-depth: 0
       - id: auth
         name: Authenticate to Google Cloud
-        uses: google-github-actions/auth@v0
+        uses: google-github-actions/auth@v1
         with:
           credentials_json: ${{ secrets.GCP_CREDENTIALS }}
       - name: Deploy function
         id: deploy
-        uses: google-github-actions/deploy-cloud-functions@v0
+        uses: google-github-actions/deploy-cloud-functions@v1
         with:
           name: translate
           entry_point: Translate
