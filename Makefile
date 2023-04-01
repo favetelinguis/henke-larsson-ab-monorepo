@@ -9,3 +9,6 @@ build:
 	go build -o api cmd/main.go
 lint:
 	golangci-lint run
+install-hooks:
+	chmod +x scripts/hooks/pre-commit
+	cp -r scripts/hooks .git/.
