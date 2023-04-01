@@ -1,0 +1,5 @@
+[env]
+GOROOT = '/root/.local/share/rtx/installs/golang/1.20.2/go'
+
+[tools]
+golang = '1.20.2'
